@@ -1,0 +1,134 @@
+            main{
+                
+                display: inline-block;
+                width: 100%;
+                max-width:800px;
+                min-width:590px;
+                position: relative;
+                left:50%;
+                -webkit-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                        transform: translateX(-50%);
+  
+            }
+            /*слайдер*/
+       
+              #slides{
+            position: relative;
+            height: 400px;
+            padding: 0px;
+            margin: 0px;
+            list-style-type: none;
+            }
+
+            .slide{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: 1;
+            -webkit-transition: opacity 1s;
+            -o-transition: opacity 1s;
+            transition: opacity 1s;
+            border:1px solid black;
+            border-radius: 20px
+            }
+
+            .showing{
+            opacity: 1;
+            z-index: 2;
+            }
+
+           .slide:nth-of-type(1){
+             background-image: url(http://www.manzanalatente.com.ar/static/2013/10/batman-800x500.jpg);
+            background-repeat:no-repeat;
+            background-size:center center;
+            }
+            .slide:nth-of-type(2){
+            background-image: url(http://theantimedia.org/wp-content/uploads/2017/12/marvel-comic-book.jpg);
+            background-repeat:no-repeat;
+            background-size:center center;
+            }
+            .slide:nth-of-type(3){
+            background-image: url(https://img05.rl0.ru/ba672ee94bf5bbbe4298a011c317979a/o/nightparty.ru/uploads/ckeditor_uploads/c/a4/ca4915df6f574c61a64f8ad7a1211efd.jpg);
+            background-repeat:no-repeat;
+            background-size:center center;
+            }
+            /*Новости*/
+            @-webkit-keyframes movie {
+                20% { -webkit-transform: rotate(5deg); transform: rotate(5deg) }
+                40% { -webkit-transform: rotate(-5deg); transform: rotate(-5deg)}
+                60% { -webkit-transform: rotate(5deg); transform: rotate(5deg) }
+                80% { -webkit-transform: rotate(-5deg); transform: rotate(-5deg)}
+                100% { -webkit-transform: rotate(0deg); transform: rotate(0deg)}
+            }
+            @keyframes movie {
+                20% { -webkit-transform: rotate(5deg); transform: rotate(5deg) }
+                40% { -webkit-transform: rotate(-5deg); transform: rotate(-5deg)}
+                60% { -webkit-transform: rotate(5deg); transform: rotate(5deg) }
+                80% { -webkit-transform: rotate(-5deg); transform: rotate(-5deg)}
+                100% { -webkit-transform: rotate(0deg); transform: rotate(0deg)}
+            }
+        .main__news{
+            display: inline-block;
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+             -ms-flex-wrap: wrap;
+                 flex-wrap: wrap;
+             -webkit-box-pack: justify;
+                 -ms-flex-pack: justify;
+                     justify-content: space-between;
+        }
+        .main__news_div:hover{
+            -webkit-animation: movie  1s  ease-in-out;
+                    animation: movie  1s  ease-in-out;
+        }
+        .main__news_div {
+            display: inline-block;
+            width: 47%;
+            min-width: 260px;
+            max-width:380px;
+            background-color: #505050;
+            border:1px solid black;
+            border-radius:20px;
+            padding:5px;
+            text-align:left;
+            margin-top:20px;
+            -webkit-box-shadow: 0 0 10px rgba(0,0,0,1);
+                    box-shadow: 0 0 10px rgba(0,0,0,1);
+            
+        }
+        .main__news_div>p{
+            margin:0px;
+            color:white;
+            
+        }
+        .img_news{
+            border:1px solid transparent;
+            border-radius:20px;
+            float:left;
+            margin-right: 5px;
+            
+        }
+        @media (max-width:590px) {
+            main{min-width:100%;
+                display: inline-block;
+            }
+            #slides{
+                display: none;
+            }
+            .main__news_div{
+                min-width: 100%;
+                padding: 0px
+                
+            }
+            
+        }

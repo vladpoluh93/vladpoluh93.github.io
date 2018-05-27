@@ -1,0 +1,134 @@
+main{
+     display: inline-block;
+                width: 100%;
+                max-width:800px;
+                min-width:590px;
+                position: relative;
+                left:50%;
+                -webkit-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                        transform: translateX(-50%);
+}
+.main__form_commentform{
+    display: inline-block;
+    width: 100%;
+    border:1px solid black;
+    border-radius:20px;
+}
+.form__div_NameForm{
+    color: white;
+    height: 20px;
+    width: 210px;
+    margin: 10px;
+    border:1px dotted black;
+    border-radius:20px;
+    text-align: center;
+    position: relative;
+        left:50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+}
+.form__div{
+    width: 100%;
+    color:white;
+    margin: 0px;
+}    
+
+.input_author{
+    background-color: #505050;
+    border:1px solid black;
+    border-radius:20px;
+    color: white;
+    width: 40%;
+    margin: 5px;
+}
+.input_email{
+    background-color: #505050;
+    border:1px solid black;
+    border-radius:20px;
+    color: white;
+    width: 40%;
+    margin: 5px;
+}
+.textarea_comment{
+    background-color: #505050;
+    border:1px solid black;
+    border-radius:20px;
+    color: white;
+    width: 40%;
+    float: left;
+    margin: 5px;
+    
+}
+.form__div_textareaComment{
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+    
+}
+.input_submit{
+    background-color: #505050;
+    border:1px solid black;
+    border-radius:20px;
+    color: white;
+    width: 15%;
+    margin: 5px;
+}
+.input_reset{
+   background-color: #505050;
+    border:1px solid black;
+    border-radius:20px;
+    color: white;
+    width: 15%;
+    margin: 5px;
+}
+.input_submit:hover,
+.input_reset:hover{
+    -webkit-transform:scale(1.05);
+        -ms-transform:scale(1.05);
+            transform:scale(1.05);
+}
+.input_author:focus,
+.input_email:focus,
+.textarea_comment:focus{
+    background-color: #505050;
+    outline: 1px solid black;
+    border:1px solid black;
+    border-radius: 0px;
+}
+.input_submit:focus,
+.input_reset:focus{
+    outline: none;
+}
+.main__div_comment{
+    display: inline-block;
+    width: 100%;
+    background-color: #505050;
+    border:1px solid black;
+    border-radius:20px;
+    margin-top: 10px;
+}
+.span_contentComment{
+    float: left;
+    clear: left;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+@media (max-width:590px) {
+    main{min-width:100%;
+                display: inline-block;
+            }
+            .input_submit,
+            .input_reset,
+            .form__div_NameForm{
+                display: inline-block;
+                width: auto;
+                height: auto;
+            }
+            .span_contentComment{
+                width: 100%;
+            }
+}

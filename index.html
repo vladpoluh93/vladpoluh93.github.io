@@ -1,9 +1,80 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> выпускной проект </title>
+        <title>Истари Комикс</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/css/header.css" type="text/css" >
+        <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/footer.css" type="text/css" />
     </head>
     <body>
-
+        <header>
+            <div class="header__div_logo" name="top"></div>
+            <div class="header__div_tel"></div>
+            <div class="header__div_email"></div>
+           <nav>
+               <div class="nav__div nav__div_glavn">
+                   <a class="nav__div_a" href="index.html">Главная</a>
+                   </div>
+               <div class="nav__div nav__div_catalog">
+                   <a class="nav__div_a" href="catalog.html">Каталог</a>
+                   </div>
+               <div class="nav__div nav__div_otziv">
+                   <a class="nav__div_a" href="otziv.html">Отзывы</a>
+                   </div>
+               <div class="nav__div nav__div_kontakt">
+                   <a class="nav__div_a" href="contakt.html">Контакты</a>
+                   </div>
+           </nav>
+        </header>
+        <main>
+            <ul id="slides">
+                <li class="slide showing"></li>
+                <li class="slide"></li>
+                <li class="slide"></li>
+            </ul>
+             <script type="text/javascript" src="assets/js/slader.js"></script>
+            <div class="main__news">
+                <div class="main__news_div div__dedpool">
+                    <img img src="assets/img/main/dedepooll.jpg" width="120px" height="120px" alt="Дэдпул" class="img_news">
+                    <p>Райан Рейнольдс благодарит фанатов, Рона Уизли и радиоактивных пауков за успех &laquo;Дэдпула 2&raquo;.
+                    Пускай &laquo;Дэдпул 2&raquo; собрал в США меньше, чем оригинал, глобальные кассовые сборы у него впечатляющие.
+                    </p>
+                </div>
+                <div class="main__news_div div__hulk">
+                    <img img src="assets/img/main/hulk.jpg" width="120px" height="120px" alt="Халк" class="img_news">
+                   <p>Джо Руссо пролил свет на сложные отношения Халка и Брюса Баннера в &laquo;Войне Бесконечности&raquo;.</p>
+                </div>
+                <div class="main__news_div div__lepehka">
+                    <img img src="assets/img/main/lepehka.jpg" width="120px" height="120px" alt="Лепешка" class="img_news">
+                    <p>&laquo;Космические лепёшки&raquo; <br> В очередной раз на русском выходит потенциально интересный комикс, и я ознакамливаюсь с ним, 
+                    чтобы рассказать вам всем, стоит ли он того, чтобы его прочитать. </p>
+                </div>
+                <div class="main__news_div div__ihidu">
+                    <img img src="assets/img/main/ihidu.jpg" width="120px" height="120px" alt="Ихуду" class="img_news">
+                    <p>ИМХО: Нелицензионная манга в России! Как пишут издательства, реализация контрафактной манги 
+                    влечет наложение денежного штрафа до пяти миллионов рублей. </p>
+                </div>
+                <div class="main__news_div div__liga">
+                    <img img src="assets/img/main/liga.jpg" width="120px" height="120px" alt="Лига" class="img_news">
+                    <p>На портале CBR вышло интервью со сценаристом Скоттом Снайдером, который рассказал о том, что в комиксы DC возвращаетс
+                    я Легион Смерти &ndash; команда, состоящая из ключевых суперзлодеев издательства. </p>
+                </div>
+                <div class="main__news_div div__vedmak">
+                    <img img src="assets/img/main/vedmak.jpg" width="120px" height="120px" alt="Ведьмак" class="img_news">
+                    <p>Как работают сценаристы сериала Netflix &laquo;Ведьмак&raquo;? Шоураннер сериала Netflix по мотивам &laquo;Ведьмака&raquo; Лорен Шмидт Хиссрич рассказала
+                    в Твиттере, как проходит работа коллектива сценаристов. 
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p class="footer__p">&copy; 2008—2018 Istori network</p>
+            <a class="footer__link link_In" href="https://www.linkedin.com" target="_blank"></a>
+            <a class="footer__link link_FaceBook" href="https://www.facebook.com" target="_blank"></a>
+            <a class="footer__link link_Twit" href="https://twitter.com" target="_blank"></a>
+            <p class="footer__p developed_sait">Сайт разработал Полюх Влад</p>
+            <a href="#top" class="top_up">Вверх &uarr;</a>
+        </footer>
     </body>
 </html>

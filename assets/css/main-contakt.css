@@ -1,0 +1,153 @@
+main{
+                
+                display: inline-block;
+                width: 100%;
+                max-width:800px;
+                min-width:590px;
+                position: relative;
+                left:50%;
+                -webkit-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                        transform: translateX(-50%);
+}
+.main-contakt__div_link{
+    display: inline-block;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.main-contakt__link{
+            display: block;
+            height: 35px;
+            width: 35px;
+            background-color:#505050; 
+            border:35px solid #505050;
+            border-radius:50px;
+            margin-left: 50%;
+            -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                    transform: translateX(-50%);
+            -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.main-contakt__link:hover{
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,1);
+            box-shadow: 0 0 10px rgba(0,0,0,1);
+}
+.contakt__link_tel{
+            background-image: url(https://image.flaticon.com/icons/png/512/33/33962.png);
+            background-repeat:no-repeat;
+            background-size:100%;
+}
+.contakt__link_email {
+            background-image: url(http://s1.iconbird.com/ico/2013/8/429/w512h5121377939682185078emailmailstreamline.png);
+            background-repeat:no-repeat;
+            background-size:90%;
+            background-position: 1.4px -0.2px;
+}
+.contakt__link_twit{
+            background-image: url(https://png.icons8.com/metro/1600/twitter.png);
+            background-repeat:no-repeat;
+            background-size:100%;
+}
+.contakt__link_face{
+            background-image: url(https://png.icons8.com/material/1600/facebook-f.png);
+            background-repeat:no-repeat;
+            background-size:100%;
+}
+.contakt__link_in{
+            background-image: url(https://cdn1.iconfinder.com/data/icons/simple-icons/2048/linkedin-2048-black.png);
+            background-repeat:no-repeat;
+            background-size:100%;
+}
+.main-contakt__div_link_div{
+    height: 250px;
+    width: 18%;
+    padding: 5px;
+    color:white;
+    text-align:center;
+    word-wrap:break-word;
+    border:1px solid black;
+    border-radius:20px;
+   -webkit-box-shadow: 0 0 10px rgba(0,0,0,1);
+           box-shadow: 0 0 10px rgba(0,0,0,1); 
+}
+.maps_google{
+    height: 500px;
+    width: 100%;
+    border:1px solid black;
+    border-radius:20px;
+   -webkit-box-shadow: 0 0 10px rgba(0,0,0,1);
+           box-shadow: 0 0 10px rgba(0,0,0,1);
+   margin-top: 10px;
+    opacity: 0.5;
+}
+.maps_google:hover{
+    opacity:1;
+}
+.main__div_maps{
+   display: inline-block;
+   width: 100%;
+   margin-top: 20px;
+   text-align:center;
+   color:white;
+}
+.div_maps_line{
+    height: 0px;
+    width: 30%;
+    border:0.5px solid black;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,1);
+            box-shadow: 0 0 10px rgba(0,0,0,1); 
+}
+.main__div_mode{
+    width: 40%;
+    float:left;
+    border:1px solid black;
+    border-radius:20px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,1);
+            box-shadow: 0 0 10px rgba(0,0,0,1);
+    text-align: center;
+    margin-top: 20px;
+}
+.div_mode_p{
+    margin: 5px;
+    color:white;
+}
+.main__div_bootomImg{
+    background-image: url(https://pngicon.ru/file/uploads/like-128x128.png);
+    background-repeat:no-repeat;
+    background-size:100%;
+    float: right;
+    height: 50px;
+    width:50px;
+    margin-top: 70px;
+}
+@media (max-width:590px) {
+            main{min-width:100%;
+                display: inline-block;
+            }
+        .main-contakt__div_link{
+            display: inline-block;
+            
+        }
+        .main-contakt__link{
+            border:0px;
+            margin-top: 10px;
+        }
+        .main-contakt__div_link_div{
+            width: 100%;
+            height: auto;
+            padding: 0px;
+        }
+        .main__div_mode{
+            width: 100%;
+        }
+}

@@ -1,0 +1,167 @@
+  body{
+               background: url(../img/dark-gray-cubes.png);
+               margin-top:8px;
+            }
+            header{
+                height:135px;
+                max-width:800px;
+                min-width:590px;
+                position: relative;
+                left:50%;
+                -webkit-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                        transform: translateX(-50%);
+                
+            }
+            .header__div_logo{
+                float:left;
+                background-image: url(../img/header/logo.png);
+                background-repeat:no-repeat;
+                background-size:100% 80px;
+                height:90px;
+                width:300px;
+            }
+            .header__div_tel{
+                float:right;
+                clear:right;
+                height:40px;
+                width:150px;
+                background-image: url(https://image.flaticon.com/icons/png/512/33/33962.png);
+                background-repeat:no-repeat;
+                background-size:20% 30px;
+                margin-bottom:5px;
+                margin-right:25px;
+            }
+            .header__div_tel:after{
+                content: "+375 (29) 209-33-68";
+                height:30px;
+                font-size:15px;
+                position:relative;
+                top:5px;
+                left:22%;
+                color:white;
+            }
+            .header__div_email{
+                float:right;
+                clear: right;
+                height:40px;
+                width:150px;
+                background-image: url(http://s1.iconbird.com/ico/2013/8/429/w512h5121377939682185078emailmailstreamline.png);
+                background-repeat:no-repeat;
+                background-size:20% 30px;
+                margin-right:25px;
+            }
+            .header__div_email:after{
+                content: "istari_DC@gmail.com";
+                height:30px;
+                font-size:15px;
+                position:relative;
+                top:5px;
+                left:22%;
+                color:white;
+            }
+            nav{
+                
+                height:30px;
+                width: 100%;
+                background:#505050;
+                float: left;
+                margin-bottom: 10px;
+                border:1px solid Black;
+                border-radius:20px;
+                -webkit-box-shadow: 0 0 10px rgba(0,0,0,1);
+                        box-shadow: 0 0 10px rgba(0,0,0,1);
+                
+            }
+            .nav__div {
+                height:20px;
+                width:15%;
+                background:#505050;
+                float:left;
+                margin-top:5px;
+                margin-right:5%;
+                border:1px solid Black;
+                border-radius:20px;
+                text-align:center;
+                font-size:18px;
+                color:white;
+                -webkit-box-shadow: 0 0 10px rgba(0,0,0,1);
+                        box-shadow: 0 0 10px rgba(0,0,0,1);
+                
+            }
+            a,
+            a:active,
+            a:visited {
+                color: white;
+                  text-decoration: none
+            }
+            .nav__div:hover{
+                -webkit-transform:scale(1.2);
+                    -ms-transform:scale(1.2);
+                        transform:scale(1.2);
+            }
+            .nav__div_glavn{
+                margin-left:12.5%;
+            }
+            @media (max-width:590px) {
+                
+               header{
+                  display: inline-block;
+                  min-width: 100%;
+                  height: auto;
+                  margin-bottom: 20px;
+                  z-index: 3;
+               } 
+               .header__div_logo{
+                   float: none;
+                   width: 100%;
+               }
+               .header__div_tel,
+               .header__div_email{
+                   display: none;
+               }
+               
+               nav{
+                  position: absolute;
+                  top: 0px;
+                  width: 70%;
+                  height: 100vh;
+                  left: -75%;
+                  z-index: 3;
+                  -webkit-transition-duration:1s;
+                       -o-transition-duration:1s;
+                          transition-duration:1s;
+               }
+               .nav__div{
+                   display: inline-block;
+                   height: auto;
+                   clear: left;
+                   margin-left: 0px;
+                   width: 100%;
+                   font-size: 5vmin;
+               }
+               nav:after{
+                   content: ">";
+                   position: absolute;
+                   top:11%;
+                   left: 100%;
+                   width: 50px;
+                   height: 20px;
+                   background-color: #505050;
+                   border:1px solid Black;
+                border-radius:20px;
+                -webkit-box-shadow: 0 0 10px rgba(0,0,0,1);
+                        box-shadow: 0 0 10px rgba(0,0,0,1);
+                   text-align: center;
+                   color: white;
+                  
+               }
+               nav:hover {
+                   -webkit-transition-duration:1s;
+                        -o-transition-duration:1s;
+                           transition-duration:1s;
+                   left:0px;
+                   
+               }
+               
+            }
